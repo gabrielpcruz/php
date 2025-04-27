@@ -1,8 +1,8 @@
 FROM ubuntu:22.04
 
-ARG PHP_VERSION=8.3
-ARG XDEBUG_YEAR=20230831
-ARG COMPOSER_VERSION=2.7.1
+ARG PHP_VERSION=8.4
+ARG XDEBUG_YEAR=20240924
+ARG COMPOSER_VERSION=2.8.8
 
 #Sem interação humana
 ARG DEBIAN_FRONTEND=noninteractive
@@ -69,4 +69,4 @@ EXPOSE  80
 
 WORKDIR /var/www/html
 
-CMD service php8.3-fpm start && nginx -g "daemon off;"
+CMD service php8.4-fpm start && nginx -g "daemon off;"
