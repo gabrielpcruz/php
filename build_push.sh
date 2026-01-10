@@ -1,0 +1,1 @@
+docker buildx build --no-cache -t gabrielpcruz/php:8.2 .
